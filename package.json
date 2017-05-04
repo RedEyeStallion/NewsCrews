@@ -1,7 +1,7 @@
 {
   "name": "news-cruise",
   "version": "0.0.0",
-  "description": "Small description for news-cruise goes here",
+  "description": "News Cruise a site for cruising the news.",
   "private": true,
   "directories": {
     "doc": "doc",
