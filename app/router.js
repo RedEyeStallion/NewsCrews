@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('buzzfeed', function() {});
   this.route('featured', function() {});
+  this.route('othernews', {path: '/othernews'});
 });
 
 export default Router;
