@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('buzzfeed', function() {});
   this.route('featured', function() {});
   this.route('article', {path: 'article/:article_title'});
-  this.route('articles');
+  this.route('othernews', {path: '/othernews'});
 });
 
 export default Router;
