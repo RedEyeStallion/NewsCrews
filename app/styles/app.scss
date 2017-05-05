@@ -1,0 +1,20 @@
+// -----------------------------
+// Bootstrap variable overrides
+// -----------------------------
+
+//end bootstrap variable overrides
+@import 'bootstrap';
+
+.feedImg{
+  max-height:200px;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+  padding: 10px;
+}

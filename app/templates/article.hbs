@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <h1>
+    articles
+  </h1>
+  <ul class="list-group">
+    {{#each model as |article|}}
+      <li class="list-group-item">
+        {{article.article_title}} - {{article.author}}
+      </li>
+      {{/each}}
+  </ul>
+</div>
