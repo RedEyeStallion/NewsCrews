@@ -5,6 +5,7 @@ A short introduction of this app could easily go here.
 
 ## Updates
 UI for buzzfeed page
+UI for article page, comments not implemented yet
 Fixed error for buzzfeed page
 
 ## Prerequisites
