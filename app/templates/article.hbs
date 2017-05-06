@@ -14,9 +14,16 @@
             <br> {{article.description}}
           </div>
 
+          <div class="flex-item">
+            <h3>
+              UpVotes: {{article.upVotes}}
+            </h3>
+
         </div>
+      </div>
       </li>
       <a class="btn btn-primary" target="_blank" href= {{article.url}}>Read News!</a>
+      <button {{action "upVote"}}>Up Vote</button>
     {{/each}}
   </ul>
 </div>

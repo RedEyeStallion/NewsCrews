@@ -40,9 +40,10 @@ export default Ember.Route.extend({
               "description": article.description,
               "url": article.url,
               "urlToImage": article.urlToImage,
-              "publishedAt": article.publishedAt
+              "publishedAt": article.publishedAt,
+              "upVotes": 0
             });
-            console.log(i + ' ' + article.author);
+            console.log(record);
             recordArray[i] = record;
           });
           loaded = true;
