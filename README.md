@@ -3,6 +3,14 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+<<<<<<< HEAD
+=======
+## Updates
+UI for buzzfeed page
+UI for article page, comments not implemented yet
+Fixed error for buzzfeed page
+
+>>>>>>> temp
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

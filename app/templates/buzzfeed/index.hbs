@@ -1,11 +1,24 @@
 <div class="panel panel-default">
   <ul class="list-group">
-    {{#each model as |article|}}
+    {{#each model as |buzzfeed|}}
       <li class="list-group-item">
-        {{#link-to 'article' article.title}}
-        {{article.title}} - {{article.author}}
+
+        {{#link-to 'article' buzzfeed.title}}
+          <div class="flex-container">
+
+            <div class="flex-item">
+              <img class="feedImg" src= {{buzzfeed.urlToImage}}>
+            </div>
+            <div class="flex-item">
+              <h3>
+              {{buzzfeed.title}} - {{buzzfeed.author}}
+            </h3>
+              <br> {{buzzfeed.description}}
+            </div>
+
+          </div>
         {{/link-to}}
       </li>
-      {{/each}}
+    {{/each}}
   </ul>
 </div>

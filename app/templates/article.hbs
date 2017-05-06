@@ -2,8 +2,22 @@
   <ul class="list-group">
     {{#each model as |article|}}
       <li class="list-group-item">
-        {{article.article_title}} - {{article.author}}
+        <div class="flex-container">
+
+          <div class="flex-item">
+            <img class="feedImg" src= {{article.urlToImage}}>
+          </div>
+          <div class="flex-item">
+            <h3>
+            {{article.title}} - {{article.author}}
+          </h3>
+            <br> {{article.description}}
+          </div>
+
+        </div>
       </li>
-      {{/each}}
+      <a class="btn btn-primary" target="_blank" href= {{article.url}}>Read News!</a>
+    {{/each}}
   </ul>
 </div>
+{{outlet}}
