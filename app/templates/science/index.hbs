@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <ul class="list-group">
+    {{#each model as |science|}}
+      <li class="list-group-item">
+
+        {{#link-to 'article' science.title}}
+          <div class="flex-container">
+
+            <div class="flex-item">
+              <img class="feedImg" src= {{science.urlToImage}}>
+            </div>
+            <div class="flex-item">
+              <h3>
+              {{science.title}} - {{science.author}}
+            </h3>
+              <br> {{science.description}}
+            </div>
+
+          </div>
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
