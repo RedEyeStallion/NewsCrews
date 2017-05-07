@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return [this.store.peekRecord('buzzfeed', params.article_title)];
+    console.log(params);
+    var info = params.article_title.split('&');
+    return [this.store.peekRecord(info[0], info[1])];
   }
 });

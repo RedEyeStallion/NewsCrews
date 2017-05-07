@@ -12,13 +12,16 @@ export default Ember.Route.extend({
           data.articles.forEach(function(article, i) {
             let record = Dstore.createRecord('science', {
               "id": article.title,
+              "name": 'science&' + article.title,
               "author": article.author,
               "title": article.title,
               "description": article.description,
               "url": article.url,
               "urlToImage": article.urlToImage,
               "publishedAt": article.publishedAt,
-              "upVotes": 0
+              "upVotes": 0,
+              "totalMessages": 0,
+              "messages": []
             });
             console.log(record);
             recordArray[i] = record;
