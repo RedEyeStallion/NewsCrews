@@ -13,9 +13,7 @@ Router.map(function() {
   }, function() {
     this.route('comments');
   });
-  this.route('othernews', {
-    path: '/othernews'
-  });
+  this.route('othernews', function() {});
   this.route('sports', function() {});
 });
 
