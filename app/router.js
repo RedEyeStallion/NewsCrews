@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('othernews', {
     path: '/othernews'
   });
+  this.route('sports', function() {});
 });
 
 export default Router;

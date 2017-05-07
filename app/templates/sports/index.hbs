@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <ul class="list-group">
+    {{#each model as |sports|}}
+      <li class="list-group-item">
+
+        {{#link-to 'article' sports.title}}
+          <div class="flex-container">
+
+            <div class="flex-item">
+              <img class="feedImg" src= {{sports.urlToImage}}>
+            </div>
+            <div class="flex-item">
+              <h3>
+              {{sports.title}} - {{sports.author}}
+            </h3>
+              <br> {{sports.description}}
+            </div>
+
+          </div>
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
