@@ -6,5 +6,10 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   url: DS.attr('string'),
   urlToImage: DS.attr('string'),
-  publishedAt: DS.attr('date')
+  publishedAt: DS.attr('date'),
+  upVotes: DS.attr('number'),
+  totalMessages: DS.attr('number'),
+  messages: DS.attr({
+    message: DS.attr('string')
+  })
 });

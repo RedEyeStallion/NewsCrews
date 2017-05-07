@@ -41,7 +41,9 @@ export default Ember.Route.extend({
               "url": article.url,
               "urlToImage": article.urlToImage,
               "publishedAt": article.publishedAt,
-              "upVotes": 0
+              "upVotes": 0,
+              "totalMessages": 0,
+              "messages": []
             });
             console.log(record);
             recordArray[i] = record;

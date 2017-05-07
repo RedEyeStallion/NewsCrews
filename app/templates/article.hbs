@@ -26,5 +26,24 @@
       <button {{action "upVote"}}>Up Vote</button>
     {{/each}}
   </ul>
+
+  <form data-chat="chat-form" class="cb-container" onsubmit="event.preventDefault();">
+        <div class="input-group">
+            <label for="js-message-input" class="sr-only">Message:</label>
+            <input type="text" class="form-control" data-chat="message-input" autofocus>
+            <span class="input-group-btn">
+        <button {{action "addMessage"}} class="btn btn-default" type="button">Go!</button>
+      </span>
+        </div>
+        <!-- /input-group -->
+    </form>
 </div>
+
+<div class="panel panel-default">
+{{#each model.messages as |item|}}
+<h1> {{item}}</h1>
+{{else}}
+<h1> No messages</h1>
+{{/each}}
+  </div>
 {{outlet}}
