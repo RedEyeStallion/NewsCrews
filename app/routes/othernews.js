@@ -1,4 +1,5 @@
 import Ember from 'ember';
+var $ = window.jQuery;
 let recordArray = [];
 let loaded = false;
 
