@@ -5,8 +5,9 @@
 //end bootstrap variable overrides
 @import 'bootstrap';
 
+// size of images
 .feedImg{
-  max-height:200px;
+  max-height:100px;
 }
 
 .flex-container {
@@ -82,3 +83,30 @@ ul, ul.panel-body {
   font-style: italic;
   /*        display: block; */
 }
+
+// navbar background color
+.navbar {
+  background-color: #008cba;
+}
+
+// when hovering over nav buttons
+.nav li:hover {
+  background-color: #008cba;
+}
+
+// overall background color
+.ember-application {
+  background-color: #d4f2fc;
+}
+
+// changes News Cruise title to white
+.navbar-header a.navbar-brand {
+  color: white;
+}
+
+// keeps News Cruise title white while hovering
+.navbar-header a.navbar-brand:hover {
+  color: white;
+}
+
+//#1e7896
