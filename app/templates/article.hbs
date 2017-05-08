@@ -11,19 +11,14 @@
             <h3>
             {{article.title}} - {{article.author}}
           </h3>
-            <br> {{article.description}}
+            <br> <strong>Description: </strong>{{article.description}}
+            <br> <strong>Source: </strong>{{article.url}}
           </div>
-
-          <div class="flex-item">
-            <h3>
-              UpVotes: {{article.upVotes}}
-            </h3>
-
-        </div>
       </div>
       </li>
-      <a class="btn btn-primary" target="_blank" href= {{article.url}}>Read News!</a>
+      <a class="btn btn-primary" target="_blank" href= {{article.url}}>Read Article!</a>
       <button {{action "upVote"}}>Up Vote</button>
+      <span>{{article.upVotes}}</span>
     {{/each}}
   </ul>
 

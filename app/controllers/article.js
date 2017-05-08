@@ -1,11 +1,13 @@
 import Ember from 'ember';
 import $ from 'jquery';
 
+// var for WebSocket connection
 let socket;
 const INPUT_SELECTOR = '[data-chat="message-input"]';
 
 export default Ember.Controller.extend({
   init: function() {
+    // connect to WebSockets server
     socket = new WebSocket('ws://localhost:3001');
   },
   actions: {
@@ -15,7 +17,7 @@ export default Ember.Controller.extend({
       article.set('upVotes', curr_upVotes + 1);
     },
     addMessage() {
-      console.log('Addding Messages');
+      console.log('Adding Messages');
       var article = this.get('content')[0];
       var input = $(INPUT_SELECTOR).val();
       var messages = article.get('messages');
@@ -44,6 +46,7 @@ function registerMessageHandler(handlerFunction) {
   };
 }
 
+// turn message payload into JSON string
 function sendMessage(payload) {
   socket.send(JSON.stringify(payload));
 }
