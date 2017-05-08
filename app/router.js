@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('othernews', function() {});
   this.route('sports', function() {});
   this.route('science', function() {});
+  this.route('economics', function() {});
 });
 
 export default Router;
