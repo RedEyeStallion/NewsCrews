@@ -118,4 +118,9 @@ ul, ul.panel-body {
 .nav.navbar-nav li a:hover {
   color: white;
 }
+
+// Keeps navbar text color white after selected
+.nav.navbar-nav li a:enabled {
+  color: white;
+}
 //#1e7896

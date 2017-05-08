@@ -1,6 +1,7 @@
 import Ember from 'ember';
 import $ from 'jquery';
 
+
 // var for WebSocket connection
 let socket;
 const INPUT_SELECTOR = '[data-chat="message-input"]';

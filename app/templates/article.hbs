@@ -17,7 +17,7 @@
       </div>
       </li>
       <a class="btn btn-primary" target="_blank" href= {{article.url}}>Read Article!</a>
-      <button {{action "upVote"}}>Up Vote</button>
+      <button type="button" class="btn btn-success"{{action "upVote"}}>Up Vote</button>
       <span>{{article.upVotes}}</span>
     {{/each}}
   </ul>
@@ -27,7 +27,7 @@
             <label for="js-message-input" class="sr-only">Message:</label>
             <input type="text" class="form-control" data-chat="message-input" autofocus>
             <span class="input-group-btn">
-        <button {{action "addMessage"}} class="btn btn-default" type="button">Go!</button>
+        <button {{action "addMessage"}} class="btn btn-primary" type="button">Comment</button>
       </span>
         </div>
         <!-- /input-group -->
@@ -40,5 +40,5 @@
 {{else}}
 <h1> No messages</h1>
 {{/each}}
-  </div>
+</div>
 {{outlet}}
