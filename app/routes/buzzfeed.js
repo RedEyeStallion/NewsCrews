@@ -9,7 +9,6 @@ export default Ember.Route.extend({
     if (!loaded) {
       return new Ember.RSVP.Promise(function(resolve) {
         $.get("https://newsapi.org/v1/articles?source=buzzfeed&sortBy=latest&apiKey=538efd35759443348adfb06e7bcd1689").then((data) => {
-          console.log(data);
           data.articles.forEach(function(article, i) {
             let record = Dstore.createRecord('buzzfeed', {
               "id": article.title,
@@ -24,7 +23,6 @@ export default Ember.Route.extend({
               "totalMessages": 0,
               "messages": []
             });
-            console.log(record);
             recordArray[i] = record;
           });
           loaded = true;
