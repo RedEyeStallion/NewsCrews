@@ -91,7 +91,7 @@ ul, ul.panel-body {
 
 // when hovering over nav buttons
 .nav li:hover {
-  background-color: #008cba;
+  background-color: #025a77;
 }
 
 // overall background color
@@ -109,9 +109,13 @@ ul, ul.panel-body {
   color: white;
 }
 
-// Change nav bar button color
+// Change nav bar button text color
 .nav.navbar-nav li a {
   color: white;
 }
 
+// Keeps navbar text color white while hovering
+.nav.navbar-nav li a:hover {
+  color: white;
+}
 //#1e7896
