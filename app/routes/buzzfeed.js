@@ -13,7 +13,7 @@ export default Ember.Route.extend({
           data.articles.forEach(function(article, i) {
             let record = Dstore.createRecord('buzzfeed', {
               "id": article.title,
-              "name": 'buzzfeed&' + article.title,
+              "name": 'buzzfeed~' + article.title,
               "author": article.author,
               "title": article.title,
               "description": article.description,
