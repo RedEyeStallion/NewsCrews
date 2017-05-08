@@ -38,6 +38,7 @@ export default Ember.Controller.extend({
       var input = $(INPUT_SELECTOR).val();
       var messages = article.get('messages');
       var totalMessages = article.get('totalMessages');
+      console.log(messages);
       messages.push(input);
       article.set('messages', messages);
       article.set('totalMessages', totalMessages + 1);
@@ -52,10 +53,11 @@ export default Ember.Controller.extend({
   },
   addMessage: function(message) {
     var article = this.get('content')[0];
-    var input = $(INPUT_SELECTOR).val();
+    // Dont add what is in the comment box add the message sent to us.?
+    //var input = $(INPUT_SELECTOR).val();
     var messages = article.get('messages');
     var totalMessages = article.get('totalMessages');
-    messages.push(input);
+    messages.push(message);
     article.set('messages', messages);
     article.set('totalMessages', totalMessages + 1);
   }
