@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+  <ul class="list-group">
+    {{#each model as |article|}}
+      <li class="list-group-item">
+        {{#link-to 'article' article.title}}
+          {{article.title}} - {{article.author}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>
