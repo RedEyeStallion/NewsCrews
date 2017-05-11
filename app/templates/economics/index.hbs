@@ -1,17 +1,17 @@
 <div class="panel panel-default">
   <ul class="list-group">
-    {{#each model as |othernews|}}
+    {{#each model as |economics|}}
       <li class="list-group-item">
 
-        {{#link-to 'article' othernews.name}}
+        {{#link-to 'article' economics.name}}
           <div class="flex-container">
 
             <div class="flex-item">
-              <img class="feedImg" src= {{othernews.urlToImage}}>
+              <img class="feedImg" src= {{economics.urlToImage}}>
             </div>
             <div class="flex-item">
-              <h3>{{othernews.title}} - {{othernews.author}}</h3>
-              <br> Upvotes: {{othernews.upVotes}}
+              <h3>{{economics.title}} - {{economics.author}}</h3>
+              <br> Upvotes: {{economics.upVotes}}
             </div>
 
           </div>
