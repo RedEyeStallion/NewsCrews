@@ -10,7 +10,5 @@ export default DS.Model.extend({
   publishedAt: DS.attr('date'),
   upVotes: DS.attr('number'),
   totalMessages: DS.attr('number'),
-  messages: DS.attr({
-    message: DS.attr('string')
-  })
+  messages: DS.hasMany('message')
 });
