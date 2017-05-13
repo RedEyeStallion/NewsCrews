@@ -38,9 +38,13 @@ export default Ember.Controller.extend({
       var input = $(INPUT_SELECTOR).val();
       $(INPUT_SELECTOR)[0].value = '';
       var messages = article.get('messages');
+      var mTimes = article.get('mTimes');
       var totalMessages = article.get('totalMessages');
       console.log(messages);
       messages.push(input);
+      console.log(mTimes);
+      mTimes.push(new Date());
+      article.set('mTimes', mTimes.slice());
       article.set('messages', messages.slice());
       article.set('totalMessages', totalMessages + 1);
       sentMessage = true;

@@ -50,6 +50,13 @@ ul, ul.panel-body {
   border-radius: 15px;
 }
 
+.message-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid grey;
+}
+
 .message-row p {
   /* flex: auto; */
 }

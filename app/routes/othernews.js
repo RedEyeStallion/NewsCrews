@@ -22,7 +22,8 @@ export default Ember.Route.extend({
               "publishedAt": article.publishedAt,
               "upVotes": 0,
               "totalMessages": 0,
-              "messages": []
+              "messages": [],
+              "mTimes": []
             });
             console.log(record);
             recordArray[i] = record;

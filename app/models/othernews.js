@@ -12,5 +12,8 @@ export default DS.Model.extend({
   totalMessages: DS.attr('number'),
   messages: DS.attr({
     message: DS.attr('string')
+  }),
+  mTimes: DS.attr({
+    mTime: DS.attr('string')
   })
 });
