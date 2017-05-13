@@ -36,11 +36,12 @@ export default Ember.Controller.extend({
     addMessage() {
       var article = this.get('content')[0];
       var input = $(INPUT_SELECTOR).val();
+      $(INPUT_SELECTOR)[0].value = '';
       var messages = article.get('messages');
       var totalMessages = article.get('totalMessages');
       console.log(messages);
       messages.push(input);
-      article.set('messages', messages);
+      article.set('messages', messages.slice());
       article.set('totalMessages', totalMessages + 1);
       sentMessage = true;
       socket.send('message~' + input);
@@ -53,12 +54,10 @@ export default Ember.Controller.extend({
   },
   addMessage: function(message) {
     var article = this.get('content')[0];
-    // Dont add what is in the comment box add the message sent to us.?
-    //var input = $(INPUT_SELECTOR).val();
     var messages = article.get('messages');
     var totalMessages = article.get('totalMessages');
     messages.push(message);
-    article.set('messages', messages);
+    article.set('messages', messages.slice());
     article.set('totalMessages', totalMessages + 1);
   }
 });
