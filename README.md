@@ -3,6 +3,14 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Members
+* Joseph Porter
+* Andres Imperial
+* Waymon Ho
+* Chih-Hung Hsieh
+* Ryan Hodgson
+* Eric Lara
+
 ## Updates
 UI for buzzfeed page
 UI for article page, comments not implemented yet
