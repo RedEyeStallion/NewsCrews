@@ -80,5 +80,5 @@ Make use of the many generators for code, try `ember help generate` for more det
 * When viewing an article lobby page (after selecting an article from a category), if you press refresh, the necessary article information will not appear on screen.
 * Upvoted articles do not always update for other people connected to the site.
 
-## A Postive Note
+## A Positive Note
 Although there were some things that we were unable to fully implement by the end, we all agree that we have learned a great deal from this project. In the beginning, Ember seemed to put a large question mark above everyone's head. However, by the end, although we did still have some difficulties and unimplemented features, we all feel like we have a much better understanding of how the framework works.
