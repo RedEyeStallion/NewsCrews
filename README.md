@@ -15,9 +15,13 @@ News Cruise is our reimagined take on the classic 'news app', where users can ge
 
 ## How to use this app
 1: With the ember server and websockets server running, navigate to http://localhost:4200/. News Cruise will appear on screen.
+
 2: Use the navigation bar at the top of the screen to pick a category to browse through.
+
 3: While browsing a category, you can select an article that interests you by clicking anywhere on the text or picture. This will take you to a new screen containing the article name, picture, a short description, and the source.
+
 4: When you are ready to read the article, click the blue 'Read Article!' button, which will take you to the article source.
+
 5: After you are done reading, you may return to the previous page and click the green 'Up Vote' button if you liked it. You can also post a message and chat about the article with others in our messaging area down below.
 
 ## Updates
