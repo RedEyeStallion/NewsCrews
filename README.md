@@ -60,10 +60,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
@@ -71,3 +67,18 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Difficulties
+* Ember is a powerful MVC framework that, while modularizing the different aspects of our app, has proven to be difficult for us to fully grasp.
+* Although we tried to implement all features as talked about in the presentation, some proved to be beyond our abilities given the time constraints.
+
+## Unimplemented Features
+* Featured page: This was something that we regrettably removed. Our vision was that as you upvote different articles, the ones with the most upvotes would be transfered to the Featured page. This proved to be infeasible at this time due to lack of documentation online as well as time constraints.
+* Messaging between users in article lobby page after selecting an article: We really wanted this feature to work. How cool would it be to have instant messaging between users after reading an article? We were able to get messages to post locally, but it does not send those messages to everyone else looking at the page. The difficulty with this one again stemmed from unfamiliarity with Ember.
+
+## Bugs
+* When viewing an article lobby page (after selecting an article from a category), if you press refresh, the necessary article information will not appear on screen.
+* Upvoted articles do not always update for other people connected to the site.
+
+## A Postive Note
+Although there were some things that we were unable to fully implement by the end, we all agree that we have learned a great deal from this project. In the beginning, Ember seemed to put a large question mark above everyone's head. However, by the end, although we did still have some difficulties and unimplemented features, we all feel like we have a much better understanding of how the framework works.
