@@ -4,7 +4,6 @@ import $ from 'jquery';
 
 // var for WebSocket connection
 let socket;
-let contentModel;
 let sentMessage = false;
 const INPUT_SELECTOR = '[data-chat="message-input"]';
 
@@ -66,21 +65,9 @@ export default Ember.Controller.extend({
   }
 });
 
-function registerOpenHandler(handlerFunction) {
-  socket.onopen = () => {
-    console.log('open');
-    handlerFunction();
-  };
-}
-
 function registerMessageHandler(handlerFunction) {
   socket.onmessage = (e) => {
     console.log('message', e.data);
     handlerFunction(e.data);
   };
-}
-
-// turn message payload into JSON string
-function sendMessage(payload) {
-  socket.send(JSON.stringify(payload));
 }
