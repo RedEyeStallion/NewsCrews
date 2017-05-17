@@ -1,6 +1,8 @@
 import Ember from 'ember';
 var $ = window.jQuery;
+// array for storing articles sent from api
 let recordArray = [];
+// initially, set loaded to false. Later this will be set to true to avoid loading duplicate articles.
 let loaded = false;
 
 export default Ember.Route.extend({
@@ -11,6 +13,7 @@ export default Ember.Route.extend({
         // Get relevant articles from source using api key
         $.get("https://newsapi.org/v1/articles?source=time&sortBy=top&apiKey=538efd35759443348adfb06e7bcd1689").then((data) => {
           data.articles.forEach(function(article, i) {
+            // create new record to be added to array of articles
             let record = Dstore.createRecord('othernews', {
               "id": article.title,
               "name": 'othernews~' + article.title,
@@ -25,8 +28,10 @@ export default Ember.Route.extend({
               "messages": [],
               "mTimes": []
             });
+            // add new record to array
             recordArray[i] = record;
           });
+          // makes sure we don't duplicate articles
           loaded = true;
           resolve();
         });
