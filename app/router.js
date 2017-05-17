@@ -7,7 +7,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('buzzfeed', function() {});
-  this.route('featured', function() {});
   this.route('article', {
     path: 'article/:article_title'
   }, function() {

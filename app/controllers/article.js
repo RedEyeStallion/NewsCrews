@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
     socket = new WebSocket('ws://localhost:3001');
     registerMessageHandler((modelObject) => {
       var type = modelObject.split('~');
-      if (sentMessage == false) {
+      if (sentMessage === false) {
         if (type[0] === 'upvote') {
           this.addUpVote();
         } else if (type[0] === 'message') {
