@@ -24,11 +24,6 @@ News Cruise is our reimagined take on the classic 'news app', where users can ge
 
 5: After you are done reading, you may return to the previous page and click the green 'Up Vote' button if you liked it. You can also post a message and chat about the article with others in our messaging area down below.
 
-## Updates
-UI for buzzfeed page
-UI for article page, comments not implemented yet
-Fixed error for buzzfeed page
-
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -37,7 +32,6 @@ You will need the following things properly installed on your computer.
 * [Node.js](http://nodejs.org/) (with NPM)
 * [Bower](http://bower.io/)
 * [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
 ## Installation
 
@@ -48,8 +42,8 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* Run ember server: `ember server`
-* Run websockets server: `npm run server`
+* Start ember server: `ember server`
+* Start websockets server: `npm run server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
