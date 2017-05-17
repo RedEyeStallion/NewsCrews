@@ -8,8 +8,8 @@ export default Ember.Route.extend({
     let Dstore = this.store;
     if (!loaded) {
       return new Ember.RSVP.Promise(function(resolve) {
+        // Get relevant articles from source using api key
         $.get("https://newsapi.org/v1/articles?source=time&sortBy=top&apiKey=538efd35759443348adfb06e7bcd1689").then((data) => {
-          console.log(data);
           data.articles.forEach(function(article, i) {
             let record = Dstore.createRecord('othernews', {
               "id": article.title,
@@ -25,7 +25,6 @@ export default Ember.Route.extend({
               "messages": [],
               "mTimes": []
             });
-            console.log(record);
             recordArray[i] = record;
           });
           loaded = true;

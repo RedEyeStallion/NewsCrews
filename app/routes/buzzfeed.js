@@ -8,6 +8,7 @@ export default Ember.Route.extend({
     let Dstore = this.store;
     if (!loaded) {
       return new Ember.RSVP.Promise(function(resolve) {
+        // Get relevant articles from source using api key
         $.get("https://newsapi.org/v1/articles?source=buzzfeed&sortBy=latest&apiKey=538efd35759443348adfb06e7bcd1689").then((data) => {
           data.articles.forEach(function(article, i) {
             let record = Dstore.createRecord('buzzfeed', {

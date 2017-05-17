@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 
+// model for holding specific article data
 export default DS.Model.extend({
   author: DS.attr('string'),
   title: DS.attr('string'),
